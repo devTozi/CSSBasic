@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {box-sizing: border-box; padding: 0; margin: 0; list-style: none;}
+        .top {
+            width: 460px;
+            margin: 0 auto;
+            border: 1px solid #777;
+            position: relative;
+            padding: 8px;
+            overflow: hidden;
+        }
+        .pos {
+            position: absolute;
+            top: 10;
+            left: 5px;
+        }
+        .top .content {
+
+            padding-left: 100px;
+            overflow: hidden;
+        }
+        .ta {
+            width: 100%;
+            height: 300px;
+            resize: vertical;
+        }
+        .content .btn_left {
+            padding-top: 5px;
+            float: left;
+        }
+
+        .content .btn_right{
+            margin-top: 5px;
+            float: right;
+        }   
+        .it {
+            height: 30px;
+            display: block;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right{
+            float: right;
+        }
+
+        .title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="top"><!-- margin: 0 auto -->
+        <div class="pos"><!-- position -->
+            <img src="img/KakaoTalk_20221220_172241749.png" alt="이미지">
+        </div>
+
+        <div class="content"><!-- padding left -->
+            <textarea class="ta">사진</textarea>
+            <div class="btn_left"><!-- float left -->
+                <input type="text" class="it">
+                <input type="text" class="it">
+            </div>
+            <button type="button" class="btn_right">등록</button><!-- float right -->
+        </div>
+    </div>
+    <div class="top">
+        <div class="left">
+            <img src="img/KakaoTalk_20221220_172241749.png" alt="이미지2">
+        </div>
+        <div class="left">
+            <span class="title">제목</span><br>
+            <span>내용</span>
+        </div>
+        <div class="right">
+            <button type="button">수정</button>
+            <button type="button">삭제</button>
+        </div>
+    </div>
+
+</body>
+</html>
